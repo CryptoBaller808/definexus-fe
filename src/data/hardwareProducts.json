@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1,
+    "name": "DeFi Nexus Vault Card",
+    "category": "Security Devices",
+    "price": 299.99,
+    "originalPrice": 399.99,
+    "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
+    "specs": {
+      "storage": "Secure Element Chip",
+      "connectivity": "NFC, USB-C",
+      "battery": "5-year lifespan",
+      "dimensions": "85.6 x 53.98 x 0.76mm"
+    },
+    "availability": "In Stock",
+    "rating": 4.9,
+    "reviews": 428,
+    "description": "Ultra-thin hardware wallet in credit card form factor with military-grade security. Store and manage your DeFi assets with enterprise-level protection in your wallet.",
+    "features": ["Credit card form factor", "Military-grade encryption", "NFC transactions", "Tamper-proof design", "Multi-currency support"],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Biometric Wallet Ring",
+    "category": "Security Devices",
+    "price": 199.99,
+    "originalPrice": 249.99,
+    "image": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400&h=300&fit=crop",
+    "specs": {
+      "authentication": "Fingerprint sensor",
+      "connectivity": "Bluetooth 5.0",
+      "battery": "7-day battery life",
+      "material": "Titanium alloy"
+    },
+    "availability": "Pre-order",
+    "rating": 4.7,
+    "reviews": 89,
+    "description": "Revolutionary wearable crypto wallet with biometric authentication. Secure your digital assets with just a touch while maintaining the convenience of contactless payments.",
+    "features": ["Fingerprint authentication", "Contactless payments", "Waterproof design", "Gesture controls", "Health monitoring"],
+    "inStock": false,
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "DeFi Nexus Mining Rig Pro",
+    "category": "Mining Hardware",
+    "price": 2499.99,
+    "originalPrice": 2999.99,
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop",
+    "specs": {
+      "hashRate": "110 TH/s",
+      "powerConsumption": "3250W",
+      "efficiency": "29.5 J/TH",
+      "dimensions": "400 x 195 x 290mm"
+    },
+    "availability": "In Stock",
+    "rating": 4.8,
+    "reviews": 156,
+    "description": "Professional-grade mining hardware optimized for maximum efficiency and profitability in DeFi mining operations. Built for 24/7 operation with advanced cooling systems.",
+    "features": ["Advanced cooling system", "Remote monitoring", "Auto-tuning algorithms", "24/7 support", "Energy efficient"],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Nexus AI Trading Terminal",
+    "category": "Trading Hardware",
+    "price": 1299.99,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
+    "specs": {
+      "processor": "Intel i7-12700K",
+      "memory": "32GB DDR5",
+      "storage": "1TB NVMe SSD",
+      "displays": "Triple 4K support"
+    },
+    "availability": "In Stock",
+    "rating": 4.6,
+    "reviews": 203,
+    "description": "High-performance trading workstation with AI-powered analytics and real-time market data processing. Designed for professional DeFi traders and institutions.",
+    "features": ["AI market analysis", "Real-time data feeds", "Multi-exchange support", "Risk management tools", "Custom indicators"],
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": 5,
+    "name": "Quantum Secure Keycard",
+    "category": "Security Devices",
+    "price": 89.99,
+    "originalPrice": 119.99,
+    "image": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop",
+    "specs": {
+      "encryption": "Quantum-resistant",
+      "connectivity": "NFC, RFID",
+      "battery": "10-year lifespan",
+      "dimensions": "85.6 x 53.98 x 2mm"
+    },
+    "availability": "In Stock",
+    "rating": 4.5,
+    "reviews": 167,
+    "description": "Next-generation security keycard with quantum-resistant encryption. Perfect for cold storage and multi-factor authentication in DeFi protocols.",
+    "features": ["Quantum encryption", "Cold storage", "Multi-factor auth", "Durable design", "Emergency recovery"],
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "DeFi Node Validator Station",
+    "category": "Validation Hardware",
+    "price": 1899.99,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+    "specs": {
+      "processor": "AMD EPYC 7543",
+      "memory": "128GB ECC RAM",
+      "storage": "4TB NVMe RAID",
+      "network": "10Gb Ethernet"
+    },
+    "availability": "In Stock",
+    "rating": 4.7,
+    "reviews": 94,
+    "description": "Enterprise-grade validation node for DeFi protocols. Optimized for high availability, security, and performance in blockchain validation operations.",
+    "features": ["High availability", "Redundant systems", "Remote management", "Automated updates", "Performance monitoring"],
+    "inStock": true,
+    "featured": false
+  }
+]
+

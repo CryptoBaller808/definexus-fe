@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "Alexandra Chen",
+    "role": "Chief Executive Officer",
+    "bio": "Visionary leader with 15+ years in fintech and blockchain. Former VP at Goldman Sachs, Alexandra founded DeFi Nexus to democratize access to financial services through innovative blockchain solutions.",
+    "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+    "expertise": ["Strategic Leadership", "Fintech Innovation", "Blockchain Strategy"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/alexandra-chen",
+      "twitter": "https://twitter.com/alexchen_defi",
+      "email": "alexandra@definexus.com"
+    },
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Marcus Rodriguez",
+    "role": "Chief Technology Officer",
+    "bio": "Blockchain architect and AI researcher with deep expertise in smart contract development. Previously led engineering teams at Ethereum Foundation and Chainlink Labs.",
+    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    "expertise": ["Blockchain Development", "AI Integration", "Smart Contracts"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/marcus-rodriguez",
+      "twitter": "https://twitter.com/marcustech",
+      "github": "https://github.com/marcusrodriguez"
+    },
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Sarah Kim",
+    "role": "Head of Product Design",
+    "bio": "Award-winning UX designer passionate about creating intuitive interfaces for complex financial products. Former design lead at Coinbase and Stripe.",
+    "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+    "expertise": ["UX/UI Design", "Product Strategy", "User Research"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/sarah-kim-design",
+      "twitter": "https://twitter.com/sarahkim_ux",
+      "dribbble": "https://dribbble.com/sarahkim"
+    },
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "David Thompson",
+    "role": "Head of Security",
+    "bio": "Cybersecurity expert specializing in blockchain security and smart contract auditing. Former security researcher at ConsenSys and Trail of Bits.",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    "expertise": ["Blockchain Security", "Smart Contract Auditing", "Penetration Testing"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/david-thompson-security",
+      "twitter": "https://twitter.com/davidthompson_sec",
+      "email": "david@definexus.com"
+    },
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Elena Vasquez",
+    "role": "VP of Business Development",
+    "bio": "Strategic partnerships expert with extensive experience in crypto and traditional finance. Previously at Binance and JPMorgan Chase, driving institutional adoption.",
+    "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
+    "expertise": ["Strategic Partnerships", "Business Strategy", "Institutional Relations"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/elena-vasquez",
+      "twitter": "https://twitter.com/elenavasquez_bd",
+      "email": "elena@definexus.com"
+    },
+    "featured": true
+  }
+]
+
