@@ -1,30 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Header from './Header'
 import { 
-  ArrowLeft, 
   Target, 
   Globe, 
   Users, 
   TrendingUp, 
   Award,
-  ArrowRight,
-  Menu,
-  X,
-  ChevronDown
+  ArrowRight
 } from 'lucide-react'
 
 function AboutPage() {
   const [isVisible, setIsVisible] = useState(false)
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     setIsVisible(true)
     document.title = 'About Us - DeFi Nexus'
   }, [])
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
 
   const leadershipTeam = [
     {
@@ -76,53 +68,11 @@ function AboutPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 font-['Montserrat']">
-      {/* Header Navigation */}
-      <header className="relative z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-700">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">DN</span>
-              </div>
-              <span className="text-white text-xl font-bold">DeFi Nexus</span>
-            </Link>
-
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-8">
-              <Link to="/" className="text-gray-300 hover:text-cyan-400 transition-colors">Home</Link>
-              <Link to="/about" className="text-cyan-400 font-semibold">About</Link>
-              <Link to="/solutions" className="text-gray-300 hover:text-cyan-400 transition-colors">Solutions</Link>
-              <Link to="/ecosystem" className="text-gray-300 hover:text-cyan-400 transition-colors">Ecosystem</Link>
-              <Link to="/contact" className="text-gray-300 hover:text-cyan-400 transition-colors">Contact</Link>
-            </nav>
-
-            {/* Mobile Menu Button */}
-            <button 
-              onClick={toggleMenu}
-              className="lg:hidden text-white hover:text-cyan-400 transition-colors"
-            >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <nav className="lg:hidden mt-4 pb-4 border-t border-slate-700 pt-4">
-              <div className="flex flex-col space-y-3">
-                <Link to="/" className="text-gray-300 hover:text-cyan-400 transition-colors" onClick={toggleMenu}>Home</Link>
-                <Link to="/about" className="text-cyan-400 font-semibold" onClick={toggleMenu}>About</Link>
-                <Link to="/solutions" className="text-gray-300 hover:text-cyan-400 transition-colors" onClick={toggleMenu}>Solutions</Link>
-                <Link to="/ecosystem" className="text-gray-300 hover:text-cyan-400 transition-colors" onClick={toggleMenu}>Ecosystem</Link>
-                <Link to="/contact" className="text-gray-300 hover:text-cyan-400 transition-colors" onClick={toggleMenu}>Contact</Link>
-              </div>
-            </nav>
-          )}
-        </div>
-      </header>
+      {/* Unified Header */}
+      <Header />
 
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
+      <section className="relative py-20 lg:py-32 overflow-hidden pt-32">{/* Added pt-32 for fixed header */}
         {/* Background Pattern */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20"></div>

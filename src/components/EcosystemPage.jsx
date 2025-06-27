@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import Header from './Header'
 import { ArrowLeft, Globe, Zap, TrendingUp, Palette, Users, Building, ExternalLink, ChevronRight, Star, Award, Shield, Brain, Lock, Cpu, Network, Coins, Palette as PaletteIcon, FileCheck, Gauge } from 'lucide-react'
 
 function EcosystemPage() {
@@ -139,6 +140,7 @@ function EcosystemPage() {
         "Global contractor management"
       ],
       icon: Globe,
+      logo: "/NomadPayLogo.png",
       gradient: "from-blue-500 to-cyan-400",
       status: "Live",
       users: "10K+",
@@ -155,6 +157,7 @@ function EcosystemPage() {
         "Employee engagement tools"
       ],
       icon: Brain,
+      logo: "/ZalarylogoL.png",
       gradient: "from-purple-500 to-pink-400",
       status: "Live",
       users: "5K+",
@@ -171,6 +174,7 @@ function EcosystemPage() {
         "Portfolio analytics"
       ],
       icon: TrendingUp,
+      logo: "/DBXlogo.png",
       gradient: "from-green-500 to-emerald-400",
       status: "Live",
       users: "15K+",
@@ -187,6 +191,7 @@ function EcosystemPage() {
         "Royalty management"
       ],
       icon: Palette,
+      logo: "/MuseArtLogo.png",
       gradient: "from-pink-500 to-rose-400",
       status: "Live",
       users: "8K+",
@@ -196,29 +201,11 @@ function EcosystemPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
-      {/* Header */}
-      <header className="relative z-10 bg-slate-900/80 backdrop-blur-md border-b border-slate-700">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">DN</span>
-              </div>
-              <span className="text-white text-xl font-bold">DeFi Nexus</span>
-            </Link>
-            <Link 
-              to="/" 
-              className="flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>Back to Home</span>
-            </Link>
-          </div>
-        </div>
-      </header>
+      {/* Unified Header */}
+      <Header />
 
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-20 overflow-hidden pt-32">{/* Added pt-32 for fixed header */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -305,8 +292,12 @@ function EcosystemPage() {
               >
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-center space-x-4">
-                    <div className={`flex items-center justify-center w-16 h-16 bg-gradient-to-r ${platform.gradient} rounded-xl`}>
-                      <platform.icon className="w-8 h-8 text-white" />
+                    <div className="flex items-center justify-center w-16 h-16 bg-white rounded-xl p-2">
+                      <img 
+                        src={platform.logo} 
+                        alt={`${platform.name} Logo`}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-white">{platform.name}</h3>

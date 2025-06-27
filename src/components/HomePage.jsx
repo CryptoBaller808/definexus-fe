@@ -21,7 +21,7 @@ import {
   Linkedin
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import defiNexusLogo from '/defi-nexus-logo-new.png'
+import defiNexusLogo from '/defi-nexus-main-logo.png'
 
 function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -99,25 +99,29 @@ function HomePage() {
       name: "NomadPay",
       description: "Global Web3 Payroll Solutions",
       color: "from-green-500 to-emerald-500",
-      icon: Users
+      icon: Users,
+      logo: "/NomadPayLogo.png"
     },
     {
       name: "Zalary",
       description: "AI-Driven HR & Compliance Platform",
       color: "from-blue-500 to-cyan-500",
-      icon: Brain
+      icon: Brain,
+      logo: "/ZalarylogoL.png"
     },
     {
       name: "DigitalBlock.Exchange",
       description: "Trade, Swap, and Earn Digital Assets",
       color: "from-purple-500 to-pink-500",
-      icon: TrendingUp
+      icon: TrendingUp,
+      logo: "/DBXlogo.png"
     },
     {
       name: "Muse Art Creative Sphere",
       description: "The Future of Art, Culture & Tokens",
       color: "from-orange-500 to-red-500",
-      icon: Palette
+      icon: Palette,
+      logo: "/MuseArtLogo.png"
     }
   ]
 
@@ -399,8 +403,12 @@ function HomePage() {
                   className="group bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all duration-500 hover:transform hover:scale-105 text-center animate-fade-in-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className={`w-16 h-16 bg-gradient-to-r ${platform.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <IconComponent className="w-8 h-8 text-white" />
+                  <div className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 p-3">
+                    <img 
+                      src={platform.logo} 
+                      alt={`${platform.name} Logo`}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors duration-300">
                     {platform.name}

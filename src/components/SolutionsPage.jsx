@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import Header from './Header'
 import { ArrowLeft, Coins, Palette, Brain, Shield, Zap, Globe, ChevronRight, Check, Star, TrendingUp, Users, Award } from 'lucide-react'
 
 function SolutionsPage() {
@@ -116,29 +117,11 @@ function SolutionsPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
-      {/* Header */}
-      <header className="relative z-10 bg-slate-900/80 backdrop-blur-md border-b border-slate-700">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">DN</span>
-              </div>
-              <span className="text-white text-xl font-bold">DeFi Nexus</span>
-            </Link>
-            <Link 
-              to="/" 
-              className="flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>Back to Homepage</span>
-            </Link>
-          </div>
-        </div>
-      </header>
+      {/* Unified Header */}
+      <Header />
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-16">
+      <main className="container mx-auto px-6 py-16 pt-32">{/* Added pt-32 for fixed header */}
         {/* Hero Section */}
         <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl mb-6">

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import Header from './Header'
 import { 
   ArrowLeft, 
   Target, 
@@ -21,7 +22,6 @@ import {
 
 function MissionPage() {
   const [isVisible, setIsVisible] = useState(false)
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     setIsVisible(true)
@@ -180,52 +180,11 @@ function MissionPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-700/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">DN</span>
-              </div>
-              <span className="text-white font-semibold text-lg">DeFi Nexus</span>
-            </Link>
-            
-            <div className="hidden md:flex items-center space-x-8">
-              <Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link>
-              <Link to="/about" className="text-gray-300 hover:text-white transition-colors">About</Link>
-              <Link to="/mission" className="text-cyan-400 font-medium">Mission</Link>
-              <Link to="/solutions" className="text-gray-300 hover:text-white transition-colors">Solutions</Link>
-              <Link to="/ecosystem" className="text-gray-300 hover:text-white transition-colors">Ecosystem</Link>
-              <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
-            </div>
-
-            <button 
-              className="md:hidden text-white"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile menu */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-slate-800 border-t border-slate-700">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link to="/" className="block px-3 py-2 text-gray-300 hover:text-white">Home</Link>
-              <Link to="/about" className="block px-3 py-2 text-gray-300 hover:text-white">About</Link>
-              <Link to="/mission" className="block px-3 py-2 text-cyan-400 font-medium">Mission</Link>
-              <Link to="/solutions" className="block px-3 py-2 text-gray-300 hover:text-white">Solutions</Link>
-              <Link to="/ecosystem" className="block px-3 py-2 text-gray-300 hover:text-white">Ecosystem</Link>
-              <Link to="/contact" className="block px-3 py-2 text-gray-300 hover:text-white">Contact</Link>
-            </div>
-          </div>
-        )}
-      </nav>
+      {/* Unified Header */}
+      <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">{/* Changed pt-24 to pt-32 for fixed header */}
         <div className="max-w-7xl mx-auto text-center">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
