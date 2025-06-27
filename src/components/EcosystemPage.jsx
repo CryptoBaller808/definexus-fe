@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Globe, Zap, TrendingUp, Palette, Users, Building, ExternalLink, ChevronRight, Star, Award, Shield, Brain, Lock, Cpu, Network, Coins, Palette as PaletteIcon, FileCheck, Gauge } from 'lucide-react'
 
